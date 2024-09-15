@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboardstyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-header">
+            <img src="images/f1-logo-8k-xm-1366x768.jpg" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="homeindex.html" onclick="showhomepage()"><i class="fas fa-tachometer-alt"></i> HOME</a></li>
+            <li><a href="#" onclick="showDashboard()"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="driverindex.html" onclick="showDriverpage()"><i class="fas fa-tachometer-alt"></i> Drivers</a></li>
+
+
+        </ul>
+    </div>
+    <div class="main-content" id="main-content">
+        <!-- Home Page Content -->
+        <div id="home-page" class="content-section">
+        </div>
+        <!-- Dashboard Content -->
+        <div id="dashboard" class="content-section" style="display: none;">
+            <div class="box-container" id="top-drivers">
+                <h2>Top 5 Drivers</h2>
+                <div class="table-chart-container">
+                    <table id="topDriversTable">
+                        <thead>
+                            <tr>
+                                <th>Driver</th>
+                                <th>Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Rows will be populated by script.js -->
+                        </tbody>
+                    </table>
+                    <canvas id="topDriversChart" width="400" height="400"></canvas>
+                </div>
+            </div>
+            <div class="box-container" id="top-constructors">
+                <h2>Top 5 Constructors</h2>
+                <div class="table-chart-container">
+                    <table id="topConstructorsTable">
+                        <thead>
+                            <tr>
+                                <th>Constructor</th>
+                                <th>Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Rows will be populated by script.js -->
+                        </tbody>
+                    </table>
+                    <canvas id="topConstructorsChart" width="400" height="400"></canvas>
+                </div>
+            </div>
+            <div class="box-container" id="all-drivers">
+                <h2>All Drivers</h2>
+                <table id="allDriversTable">
+                    <thead>
+                        <tr>
+                            <th>Driver</th>
+                            <th>Constructor</th>
+                            <th>BRN</th>
+                            <th>SAU</th>
+                            <th>AUS</th>
+                            <th>AZB</th>
+                            <th>MIA</th>
+                            <th>MON</th>
+                            <th>ESP</th>
+                            <th>CAN</th>
+                            <th>AUT</th>
+                            <th>GBR</th>
+                            <th>HUN</th>
+                            <th>BEL</th>
+                            <th>NED</th>
+                            <th>ITA2</th>
+                            <th>SIN</th>
+                            <th>JPN</th>
+                            <th>QAT</th>
+                            <th>USA</th>
+                            <th>MEX</th>
+                            <th>BRA</th>
+                            <th>LAS</th>
+                            <th>ARE</th>
+                            <th>Total Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows will be populated by script.js -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboardscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #fff;
+
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    background-color: #e10600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+    display: flex-start;
+
+}
+
+.navbar-header img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-header h2 {
+    margin: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    /* display: flex-start; */
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #E3A5C7;
+    transform: scale(1.1);
+}
+
+.navbar ul li a i {
+    margin-right: 5px;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 80px 20px 20px; /* Adjusted padding to accommodate navbar */
+    background-color: #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Box Container Styles */
+.box-container {
+    background-color: #3a3a3a;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Table and Chart Container */
+.table-chart-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.table-chart-container table {
+    width: 62%;
+    margin-right: 20px; /* Adjust as needed */
+}
+
+.table-chart-container canvas {
+    width: 35%;
+    margin-left: -10px; /* Move charts to the left */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #555;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    color: #ffffff;
+}
+
+th {
+    background-color: #444;
+}
+#drivers {
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.driver-categories {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.driver-categories span {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-bottom: 2px solid transparent;
+}
+
+.driver-categories span:hover {
+    border-bottom: 2px solid red;
+}
+
+.drivers-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.driver-card {
+    background-color: #2c2c2c;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.driver-card:hover {
+    background-color: #3c3c3c;
+}
+
+.driver-card span {
+    font-weight: bold;
+}
